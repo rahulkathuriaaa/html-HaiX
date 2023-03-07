@@ -1,0 +1,216 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section
+      id="calculator-block_a1eb47f0717c6d15cc19be5b0ad5973e"
+      class="section-calculator view-in"
+    >
+      <div class="container">
+        <header class="header header--center">
+          <span class="section-title">CALCULATOR</span>
+          <h2 class="header__title">
+            Calculate your <span class="color-light-blue">time savings</span>
+          </h2>
+          <h3 class="header__description">
+            See how much time you and your team can save a month using
+            NapoleonCat.
+          </h3>
+        </header>
+        <div class="boxes">
+          <div class="box box-options">
+            <div class="box-options__content">
+              <fieldset>
+                <legend class="heading">
+                  What social media platforms does your business use?
+                </legend>
+                <div class="box-options__socials">
+                  <input
+                    type="checkbox"
+                    id="facebook"
+                    name="facebook"
+                    
+                    value="10"
+                    class="box-options__social__checkbox"
+                    onclick="incrementNumber()"
+                  />
+                  <label for="facebook">
+                    <img
+                      src="https://napoleoncat.com/wp-content/themes/napoleoncat-vue/build/images/logos/fb.svg"
+                      alt="facebook logo"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      class="box-options__social__img"
+                    />
+                  </label>
+                  <input
+                    type="checkbox"
+                    id="instagram"
+                    name="instagram"
+                    
+                    value="10"
+                    class="box-options__social__checkbox"
+                    onclick="incrementNumber()"
+                  />
+                  <label for="instagram">
+                    <img
+                      src="https://napoleoncat.com/wp-content/themes/napoleoncat-vue/build/images/logos/instagram.svg"
+                      alt="instagram logo"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      class="box-options__social__img"
+                  /></label>
+                  <input
+                    type="checkbox"
+                    id="twitter"
+                    name="twitter"
+                    value="10"
+                    class="box-options__social__checkbox"
+                    onclick="incrementNumber()"
+                  />
+                  <label for="twitter">
+                    <img
+                      src="https://napoleoncat.com/wp-content/themes/napoleoncat-vue/build/images/logos/twitter.svg"
+                      alt="twitter logo"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      class="box-options__social__img"
+                    />
+                  </label>
+                  <input
+                    type="checkbox"
+                    id="gmb"
+                    name="gmb"
+                    value="10"
+                    
+                    class="box-options__social__checkbox"
+                    onclick="incrementNumber()"
+                  />
+                  <label for="gmb"
+                    ><img
+                      src="https://napoleoncat.com/wp-content/themes/napoleoncat-vue/build/images/logos/google.svg"
+                      alt="GMB logo"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      class="box-options__social__img"
+                    />
+                  </label>
+                  <input
+                    type="checkbox"
+                    id="linkedin"
+                    name="linkedin"
+                    value="10"
+                    class="box-options__social__checkbox"
+                    onclick="incrementNumber()"
+                  />
+                  <label for="linkedin"
+                    ><img
+                      src="https://napoleoncat.com/wp-content/themes/napoleoncat-vue/build/images/logos/linkedin.svg"
+                      alt="linkedin logo"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      class="box-options__social__img"
+                    />
+                  </label>
+                </div>
+              </fieldset>
+              <div class="box-options__interactions">
+                <fieldset>
+                  <legend class="heading">
+                    How many daily interactions* do you have with users ?
+                  </legend>
+                  <div class="box-options__radios">
+                    <label class="radio">
+                      <input 
+                      type="radio" 
+                      name="option" 
+                      value="10" 
+                      checked = "checked"/>
+                      <span class="label" id="one">1-10</span>
+                    </label>
+                    <label class="radio">
+                      <input
+                        type="radio"
+                        name="option"
+                        value="25"
+                        
+                      />
+                      <span class="label" id="two">11-50</span></label
+                    >
+                    <label class="radio"
+                      ><input type="radio" name="option" value="75" />
+                      <span class="label" id="three">51-100</span></label
+                    >
+                    <label class="radio"
+                      ><input type="radio" name="option" value="150" />
+                      <span class="label" id="four">101-201</span></label
+                    >
+                    <label class="radio"
+                      ><input type="radio" name="option" value="250" />
+                      <span class="label" id="five">200+</span></label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+              <p class="footer-text">
+                *Comments, questions, reviews, likes, direct messages, etc that
+                you or your team need to moderate on your business social media
+                profiles.
+              </p>
+            </div>
+          </div>
+          <div class="box box-outcome">
+            <div class="box-outcome__triangle"></div>
+            <div class="box-outcome__content">
+              <h3 class="box-outcome__content__heading">
+                Monthly you’ll save:
+              </h3>
+              <span class="box-outcome__outcome"
+                ><span id="hour">5</span> hours</span
+              >
+              <a class="btn btn-secondary calc-cta"
+                >Try it yourself – for free</a
+              >
+              <p class="box-outcome__under-cta">
+                Sign up for a 14-day free trial.<br />No credit card required.
+              </p>
+              <div class="footer-text-wrapper">
+                <div class="calculator__tooltip">
+                  <div class="calculator__tooltip__close"></div>
+                  <h4 class="calculator__tooltip__heading">We assume that:</h4>
+                  <ul class="custom-list--blue custom-list">
+                    <li>
+                      It takes you 1 minute (on average) to moderate 1
+                      interaction
+                    </li>
+                    <li>You can automate 50% of your moderation actions</li>
+                    <li>
+                      It takes you 10 minutes (on average) per day to switch
+                      between social media channels
+                    </li>
+                  </ul>
+                  <div class="triangle"></div>
+                </div>
+                <p class="footer-text calc-tooltip">
+                  Where do these numbers come from?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="logic.js"></script>
+</html>
